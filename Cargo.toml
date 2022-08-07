@@ -6,3 +6,11 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+log = "0.4"
+rusoto_core = {version = "0.45", default_features = false, features=["rustls"]}
+rusoto_s3 = {version = "0.45", default_features = false, features=["rustls"]}
+image = "0.23.14"
+tokio = { version = "0.2", features = ["full"] }
+lambda_runtime = "0.2.1"
+serde = { version = "1", features = ["derive"] }
+simple_logger = "1.16.0"
