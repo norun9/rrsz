@@ -30,6 +30,5 @@ https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.htm
 
 7. Run ECR image with Lambda
 ```
-aws lambda invoke --invocation-type Event --function-name [FUNCTION_NAME] --region [REGION_NAME] --payload '{"bucket_name":"xxx", "prefix":"xxx", "target_size":128}' --cli-binary-format raw-in-base64-out outputfile.txt
+aws lambda invoke --invocation-type Event --function-name [FUNCTION_NAME] --region [REGION_NAME] --payload '{"bucket_name":"xxx", "prefix":"xxx", "tgt_size":128, "tgt_ext":"png"}' --cli-binary-format raw-in-base64-out outputfile.txt
 ```
-
