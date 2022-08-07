@@ -22,12 +22,10 @@ docker build -t sharedine/app/batch-resize .
 ```
 
 4. Obtain authentication token and authenticate Docker client against registry
-
-  https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html#registry_auth
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html#registry_auth
 
 5. Push Docker image to ECR
-
-  https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html
 
 6. Deploy ECR image with Labmda
 
