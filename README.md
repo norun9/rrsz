@@ -17,7 +17,7 @@ docker container run --rm \
 
 3. Build the image for runtime
 ```
-docker build -t sharedine/app/batch-resize . 
+docker build -t [IMAGE_TAG_NAME] .
 ```
 
 4. Obtain authentication token and authenticate Docker client against registry
