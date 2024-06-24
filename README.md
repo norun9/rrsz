@@ -3,7 +3,7 @@
 
 1. Execute Dockerfile for build with any image name to build image
 ```
-docker image build -t "resize-container-build" -f Dockerfile.build . 
+docker image build -t [BUILD_IMAGE_TAG] -f Dockerfile.build . 
 ```
 
 2. Run the image and create a binary file in `/target/release/`.
@@ -12,12 +12,12 @@ docker container run --rm \
     -v $PWD:/code \
     -v $HOME/.cargo/registry:/root/.cargo/registry \
     -v $HOME/.cargo/git:/root/.cargo/git \
-    resize-container-build
+    [BUILD_IMAGE_TAG]
 ```
 
 3. Build the image for runtime
 ```
-docker build -t [IMAGE_TAG_NAME] .
+docker build -t [RUNTIME_IMAGE_TAG] .
 ```
 
 4. Obtain authentication token and authenticate Docker client against registry
