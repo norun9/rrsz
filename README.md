@@ -1,6 +1,3 @@
-**note to self**
-
-
 1. Execute Dockerfile for build with any image name to build image
 ```
 docker image build -t [BUILD_IMAGE_TAG] -f Dockerfile.build . 
